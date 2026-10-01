@@ -43,3 +43,7 @@
 
 /* Supplied collaboration logos retain their original files. */
 .brand-names{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:36px 26px;text-align:center}.brand-names>span{min-width:0;font-size:clamp(20px,2vw,32px)}.brand-names .client-logo{display:flex;align-items:center;justify-content:center;position:relative;height:78px;overflow:hidden;width:100%;border-radius:12px}.client-logo img{display:block;flex:none;width:150px;height:150px;object-fit:contain;filter:grayscale(1) brightness(0) invert(.7)}.client-zoomit img{width:200px;height:200px}.client-zoomg img{width:80px;height:80px;filter:grayscale(1) brightness(1.8);mix-blend-mode:screen}.client-delpazir img{width:130px;height:130px}.client-mazmaz img{width:130px;height:130px;filter:grayscale(1) invert(1);mix-blend-mode:screen}.client-faramouj img{width:90px;height:90px}.client-namava img{width:135px;height:135px}.brand-secondary{display:flex;flex-wrap:wrap;justify-content:center}.brand-secondary>span{font-size:clamp(16px,1.4vw,22px)}@media(max-width:700px){.brand-names:not(.brand-secondary){grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 16px}.brand-names>span{font-size:22px}.brand-secondary>span{font-size:16px}.client-zoomit img{width:170px;height:170px}}
+
+.client-mazmaz img{filter:grayscale(1) brightness(0) invert(.7);mix-blend-mode:normal;width:130px;height:130px}
+
+.client-zoomg img{mix-blend-mode:normal;filter:grayscale(1);width:90px;height:90px}.client-delpazir img{filter:grayscale(1);opacity:.8}
