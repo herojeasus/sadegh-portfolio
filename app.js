@@ -1,4 +1,4 @@
-const clientLogos={'Zoomit':['logo-zoomit.webp', 'zoomit'],'Zoomg':['logo-zoomg.png', 'zoomg'],'Delpazir':['logo-delpazir.webp', 'delpazir'],'Mazmaz':['logo-mazmaz.png', 'mazmaz'],'Faramouj':['logo-faramouj.png', 'faramouj'],'Namava':['logo-namava.png', 'namava']};
+const clientLogos={'Afamed':['logo-afamed.jpeg','afamed'],'Pouyan Festival':['logo-pouyan.png','pouyan'],'Tehran Fine Arts':['logo-tehran.png','tehran'],'Zoomit':['logo-zoomit.webp', 'zoomit'],'Zoomg':['logo-zoomg.png', 'zoomg'],'Delpazir':['logo-delpazir.webp', 'delpazir'],'Mazmaz':['logo-mazmaz.png', 'mazmaz'],'Faramouj':['logo-faramouj.png', 'faramouj'],'Namava':['logo-namava.png', 'namava']};
 function brandLogo(name){const logo=clientLogos[name];return logo?`<span class="client-logo client-${logo[1]}" title="${name}"><img src="${logo[0]}" alt="${name}" loading="lazy"></span>`:name}
 const app=document.getElementById('app');
 let lang='en';try{lang=localStorage.getItem('portfolio-lang')==='fa'?'fa':'en'}catch(e){}
