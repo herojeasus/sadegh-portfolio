@@ -166,3 +166,53 @@
 .personal-copy h2 em{font-family:Georgia,serif;font-weight:400;color:var(--accent)}
 
 #project-dialog{overflow-y:auto;overscroll-behavior:contain}
+
+/* Varied, flowing All Work gallery. */
+.all-projects .project-grid{display:block;columns:3;column-gap:22px;direction:ltr}
+.all-projects .project-card{display:inline-block;vertical-align:top;width:100%;break-inside:avoid;margin:0 0 25px;direction:inherit}
+.fa .all-projects .project-card{direction:rtl}
+.all-projects .project-image{aspect-ratio:4/5;border-radius:26px}
+.all-projects .cover-2{aspect-ratio:1/1}
+.all-projects .cover-3{aspect-ratio:3/4}
+.all-projects .cover-4,.all-projects .cover-10{aspect-ratio:16/9}
+.all-projects .cover-5{aspect-ratio:4/5}
+.all-projects .cover-6{aspect-ratio:1/1}
+.all-projects .cover-7{aspect-ratio:5/6}
+.all-projects .cover-9{aspect-ratio:3/4}
+.all-projects .cover-11{aspect-ratio:4/5}
+.all-projects .project-caption,.fa .all-projects .project-caption{inset:auto 22px 22px;gap:9px}
+.all-projects .project-caption h3{font-size:clamp(23px,2.2vw,34px);line-height:1.2}
+.all-projects .cover-play{width:36px;height:36px;border-radius:12px;font-size:12px;transition:transform 200ms var(--ease-out)}
+.all-projects .slot-label{font-size:10px;margin-top:12px}
+.all-projects .slot-label>span{display:none}
+.all-projects .sample-tag{display:none}
+.all-projects .project-card.reveal{transform:translateY(65px) scale(.96);transition:opacity 800ms var(--ease-out),transform 900ms var(--ease-out)}
+.all-projects .project-card.reveal.in{transform:translateY(0) scale(1)}
+.all-projects .project-card .project-image{clip-path:inset(7% 0 7% 0 round 26px);transition:clip-path 900ms var(--ease-in-out),transform 220ms var(--ease-out)}
+.all-projects .project-card.in .project-image{clip-path:inset(0 0 0 0 round 26px)}
+.all-projects .cover-art{transition:transform 240ms var(--ease-out)}
+@media(hover:hover) and (pointer:fine){
+ .all-projects .project-card:hover .project-image{transform:translateY(-5px)}
+ .all-projects .project-card:hover .cover-art{transform:scale(1.07)}
+ .all-projects .project-card:hover .cover-play{transform:rotate(-8deg) scale(1.1)}
+}
+@media(min-width:1600px){.all-projects .project-grid{columns:4}}
+@media(max-width:900px){.all-projects .project-grid{columns:2;column-gap:18px}}
+@media(max-width:700px){
+ .all-projects .wide{width:calc(100% - 28px)}
+ .all-projects .project-grid{column-gap:12px}
+ .all-projects .project-card{margin-bottom:17px}
+ .all-projects .project-image{border-radius:19px}
+ .all-projects .project-caption,.fa .all-projects .project-caption{inset:auto 13px 14px;display:block}
+ .all-projects .project-caption h3{font-size:18px;line-height:1.3}
+ .all-projects .project-caption small{font-size:8px;display:block;margin-bottom:8px}
+ .all-projects .cover-play{display:none}
+ .all-projects .slot-label{font-size:9px;margin-top:9px}
+ .all-projects .hover-disc{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+ .all-projects .project-card.reveal,.all-projects .project-card.reveal.in,
+ .all-projects .project-card:hover .project-image,.all-projects .project-card:hover .cover-art,
+ .all-projects .project-card:hover .cover-play{transform:none;transition:none}
+ .all-projects .project-card .project-image,.all-projects .project-card.in .project-image{clip-path:none;transition:none}
+}
