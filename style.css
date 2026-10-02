@@ -216,3 +216,6 @@
  .all-projects .project-card:hover .cover-play{transform:none;transition:none}
  .all-projects .project-card .project-image,.all-projects .project-card.in .project-image{clip-path:none;transition:none}
 }
+
+.all-projects .slot-label{padding:8px 0 0;line-height:1.4}
+@media(max-width:700px){.all-projects .slot-label{padding:3px 0 0}.all-projects .cover-4 .project-caption h3,.all-projects .cover-10 .project-caption h3{font-size:14px}.all-projects .cover-4 .project-caption small,.all-projects .cover-10 .project-caption small{margin-bottom:4px}.all-projects .cover-10 .project-caption{inset:auto 10px 10px}}
