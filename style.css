@@ -162,3 +162,5 @@
 @media(hover:hover) and (pointer:fine){.back-to-top:hover{background:var(--accent);transform:translateY(-2px)}}
 @media(max-width:700px){.back-to-top{right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));width:46px;height:46px;border-radius:15px}}
 @media(prefers-reduced-motion:reduce){.back-to-top,.back-to-top.is-visible,.back-to-top:hover,.back-to-top:active{transform:none;transition:opacity 150ms ease,background 150ms ease,visibility 150ms}}
+
+.personal-copy h2 em{font-family:Georgia,serif;font-weight:400;color:var(--accent)}
