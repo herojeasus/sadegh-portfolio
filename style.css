@@ -164,3 +164,5 @@
 @media(prefers-reduced-motion:reduce){.back-to-top,.back-to-top.is-visible,.back-to-top:hover,.back-to-top:active{transform:none;transition:opacity 150ms ease,background 150ms ease,visibility 150ms}}
 
 .personal-copy h2 em{font-family:Georgia,serif;font-weight:400;color:var(--accent)}
+
+#project-dialog{overflow-y:auto;overscroll-behavior:contain}
