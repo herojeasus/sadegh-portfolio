@@ -219,3 +219,35 @@
 
 .all-projects .slot-label{padding:8px 0 0;line-height:1.4}
 @media(max-width:700px){.all-projects .slot-label{padding:3px 0 0}.all-projects .cover-4 .project-caption h3,.all-projects .cover-10 .project-caption h3{font-size:14px}.all-projects .cover-4 .project-caption small,.all-projects .cover-10 .project-caption small{margin-bottom:4px}.all-projects .cover-10 .project-caption{inset:auto 10px 10px}}
+
+/* Grid masonry avoids transformed fragments disappearing in CSS columns. */
+.all-projects .project-grid{display:grid;columns:auto;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:1px;column-gap:22px;row-gap:0;align-items:start}
+.all-projects .project-card{margin:0;min-width:0;align-self:start}
+.all-projects .project-card.reveal.in{transform:none}
+.all-projects .project-card .project-image,.all-projects .project-card.in .project-image{clip-path:none;overflow:hidden;isolation:isolate;transform:none;transition:none}
+@media(hover:hover) and (pointer:fine){.all-projects .project-card:hover .project-image{transform:none}.all-projects .project-card:hover .cover-art{transform:scale(1.06)}}
+@media(min-width:1600px){.all-projects .project-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:900px){.all-projects .project-grid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:18px}}
+@media(max-width:700px){.all-projects .project-grid{column-gap:12px}.all-projects .project-card{margin:0}}
+/* A consistent entrance and response to interaction on every page. */
+.reveal{transform:translateY(64px);transition:opacity 850ms var(--ease-out),transform 950ms var(--ease-out)}
+.reveal.in{transform:none}
+.personal-cat>img,.travel-moment>img,.about-portrait>img{transform:scale(1.1)}
+.personal-cat figcaption,.travel-moment figcaption{transition:transform 220ms var(--ease-out)}
+.skill-card,.music-moment,.backstage-frame{transition:transform 220ms var(--ease-out)}
+.connect-icons .reveal{transition-duration:500ms}
+.page-intro.reveal{transition-delay:180ms}
+#project-dialog[open]{animation:dialog-arrive 350ms var(--ease-out)}
+#project-dialog::backdrop{animation:backdrop-arrive 250ms ease}
+@keyframes dialog-arrive{from{opacity:0;transform:translateY(26px) scale(.97)}to{opacity:1;transform:none}}
+@keyframes backdrop-arrive{from{opacity:0}to{opacity:1}}
+@media(hover:hover) and (pointer:fine){
+ .skill-card.in:hover,.music-moment.in:hover{transform:translateY(-7px)}
+ .backstage-card.in:hover .backstage-frame{transform:translateY(-5px)}
+ .personal-cat:hover figcaption,.travel-moment:hover figcaption{transform:translateY(-7px)}
+}
+@media(prefers-reduced-motion:reduce){
+ .reveal,.reveal.in,.all-projects .project-card.reveal,.all-projects .project-card.reveal.in{transform:none;transition:none}
+ .personal-cat>img,.travel-moment>img,.about-portrait>img,.skill-card.in:hover,.music-moment.in:hover,.backstage-card.in:hover .backstage-frame,.personal-cat:hover figcaption,.travel-moment:hover figcaption{transform:none;transition:none}
+ #project-dialog[open],#project-dialog::backdrop{animation:none}
+}
