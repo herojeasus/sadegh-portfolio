@@ -260,3 +260,8 @@
 .all-projects .cover-14{aspect-ratio:3/4}.cover-14 .cover-art img{object-position:center 60%}
 
 .all-projects .cover-15{aspect-ratio:3/4}.all-projects .cover-16{aspect-ratio:4/5}.all-projects .cover-17{aspect-ratio:1/1}.cover-15 .cover-art img,.cover-16 .cover-art img,.cover-17 .cover-art img{object-position:center 40%}
+
+/* Keep the designed Visioface cover fully visible. */
+.all-projects .cover-13{aspect-ratio:16/9}
+.cover-13 .cover-art img{object-position:center;object-fit:contain}
+.cover-13 .project-caption h3,.cover-13 .project-caption small{display:none}
