@@ -254,3 +254,5 @@
 
 .all-projects .cover-12{aspect-ratio:16/9}
 @media(max-width:700px){.all-projects .cover-12 .project-caption h3{font-size:14px}.all-projects .cover-12 .project-caption small{margin-bottom:4px}.all-projects .cover-12 .project-caption{inset:auto 10px 10px}}
+
+.all-projects .cover-13{aspect-ratio:1/1}
