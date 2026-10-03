@@ -251,3 +251,6 @@
  .personal-cat>img,.travel-moment>img,.about-portrait>img,.skill-card.in:hover,.music-moment.in:hover,.backstage-card.in:hover .backstage-frame,.personal-cat:hover figcaption,.travel-moment:hover figcaption{transform:none;transition:none}
  #project-dialog[open],#project-dialog::backdrop{animation:none}
 }
+
+.all-projects .cover-12{aspect-ratio:16/9}
+@media(max-width:700px){.all-projects .cover-12 .project-caption h3{font-size:14px}.all-projects .cover-12 .project-caption small{margin-bottom:4px}.all-projects .cover-12 .project-caption{inset:auto 10px 10px}}
