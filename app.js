@@ -34,7 +34,7 @@ projectSeed.splice(projectSeed.findIndex(p=>p.id===8),1);
 let projectRecords=projectSeed;try{const saved=JSON.parse(localStorage.getItem('sadegh-portfolio-projects-v1'));if(Array.isArray(saved))projectRecords=projectSeed.map(p=>p.published?p:(saved.find(x=>x.id===p.id)||p))}catch(e){}
 Object.assign(projectRecords.find(p=>p.id===4),{video:'work-04-landscape.mp4',poster:'work-04-landscape.jpg'});
 // Designed artwork is shared by the gallery, home cards, and player posters.
-const designedCovers={1:'cover-01-v2.png',2:'cover-02-v2.png',3:'cover-03-v2.png',4:'cover-04-v2.png',5:'cover-05-v2.png',6:'cover-06-v2.png',7:'cover-07-v2.png',9:'cover-09-v2.png',10:'cover-10-v2.png',11:'cover-11-v2.png',12:'cover-12-v2.png',13:'saramalek-visioface-cover-v2.png',14:'cover-14-v2.png',15:'cover-15-v2.png',16:'cover-16-v2.png',17:'cover-17-v2.png'};
+const designedCovers={1:'cover-01-v3.png',2:'cover-02-v3.png',3:'cover-03-v3.png',4:'cover-04-v3.png',5:'cover-05-v3.png',6:'cover-06-v3.png',7:'cover-07-v3.png',9:'cover-09-v3.png',10:'cover-10-v3.png',11:'cover-11-v3.png',12:'cover-12-v3.png',13:'saramalek-visioface-cover-v2.png',14:'cover-14-v3.png',15:'cover-15-v3.png',16:'cover-16-v3.png',17:'cover-17-v3.png'};
 projectRecords.forEach(p=>{if(designedCovers[p.id]){p.poster=designedCovers[p.id];p.coverDesigned=true}});
 const defaultDescription=projectSeed[0].description;
 const projectTitle=p=>p.titleFa?B(p.title,p.titleFa):/^پروژه \d+$/.test(p.title)?B('Project '+String(p.id).padStart(2,'0'),'پروژه '+String(p.id).padStart(2,'0')):p.title;
