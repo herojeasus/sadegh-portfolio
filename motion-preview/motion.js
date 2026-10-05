@@ -5,6 +5,10 @@ let cinemaSource = null;
 let cinemaBusy = false;
 let navigationBusy = false;
 
+function resolveMarkup(markup) {
+  return markup.replace(/\b(src|poster)="([^"]+)"/g, (_, attribute, value) => `${attribute}="${/^(?:[a-z]+:|\/|\.\.)/i.test(value) ? value : '../'+value}"`);
+}
+
 function resolveAssets(root) {
   root.querySelectorAll('img[src],video[src],video[poster]').forEach(el => {
     ['src','poster'].forEach(attribute => {
