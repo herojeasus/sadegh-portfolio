@@ -295,7 +295,7 @@
 @font-face{font-family:Abar;src:url('fonts/abar-regular.otf') format('opentype');font-weight:400;font-display:swap}
 @font-face{font-family:Abar;src:url('fonts/abar-semibold.otf') format('opentype');font-weight:600;font-display:swap}
 @font-face{font-family:Abar;src:url('fonts/abar-black.otf') format('opentype');font-weight:900;font-display:swap}
-.fa,.fa button,.fa .section-kicker,.fa .hero-tagline,.fa .sample-tag,.fa .outline-button,.fa .black-button,.fa .text-link,.fa .slot-label,.fa .hover-disc,.fa .project-caption small{font-family:Abar,Vazirmatn,Arial,sans-serif}
+.fa,.fa button,.fa .section-kicker,.fa .hero-tagline,.fa .sample-tag,.fa .outline-button,.fa .black-button,.fa .text-link,.fa .slot-label,.fa .hover-disc,.fa .project-caption small{font-family:Vazirmatn,Vazirmatn,Arial,sans-serif}
 .theme-toggle{width:34px;height:34px;border-radius:10px;border:1px solid currentColor;background:transparent;color:inherit;display:grid;place-items:center;font:23px/1 Arial;flex-shrink:0}
 .projects .moody-cover{container-type:inline-size;background:#0b171d;isolation:isolate}
 .projects .moody-cover .cover-art{position:absolute;inset:0}
@@ -304,7 +304,7 @@
 .cover-editorial-copy{position:absolute;inset:auto 24px 28px;z-index:2;text-align:start;pointer-events:none;padding-inline-end:44px}
 .cover-editorial-copy .cover-eyebrow{display:block;font:10px/1.5 'DM Sans',Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase;color:#dfc879;margin-bottom:8px}
 .cover-editorial-copy h3{font-size:clamp(18px,7cqw,38px);font-weight:600;letter-spacing:-.025em;line-height:1.15;color:#f2f4f3;margin:0;text-wrap:balance}
-.fa .cover-editorial-copy h3{font-family:Abar,Vazirmatn,Arial,sans-serif;letter-spacing:normal;line-height:1.5;font-weight:900}
+.fa .cover-editorial-copy h3{font-family:Vazirmatn,Vazirmatn,Arial,sans-serif;letter-spacing:normal;line-height:1.5;font-weight:900}
 .projects .moody-cover .project-caption{z-index:3;display:flex;justify-content:flex-end;inset:auto 20px 25px}
 .projects .moody-cover .cover-play{background:#f3f5f01a;border:1px solid #d4e3e52b;color:#f4f6f3;backdrop-filter:blur(5px)}
 .projects.home-projects .moody-cover{aspect-ratio:16/9!important}
@@ -317,7 +317,7 @@
 .projects .moody-cover .cover-editorial-copy{inset:auto 7% 8%;padding:0;z-index:2;width:86%;max-width:none}
 .projects .moody-cover .cover-editorial-copy h3{font-size:clamp(22px,13cqw,90px);font-weight:900;line-height:.93;letter-spacing:-.055em;text-transform:uppercase;text-shadow:0 3px 24px #0005}
 .cover-editorial-copy h3>span{display:block}
-.fa .projects .moody-cover .cover-editorial-copy h3{font-family:Abar,sans-serif;font-size:clamp(23px,15cqw,100px);font-weight:900;line-height:1.12;letter-spacing:0;text-transform:none}
+.fa .projects .moody-cover .cover-editorial-copy h3{font-family:Vazirmatn,sans-serif;font-size:clamp(23px,15cqw,100px);font-weight:900;line-height:1.12;letter-spacing:0;text-transform:none}
 .cover-signature{display:inline-block;font-family:Georgia,serif;font-size:clamp(13px,6.5cqw,40px);font-weight:700;line-height:1.05;background:#17303cbb;color:#f5d890;padding:2px 12px 5px;border-radius:10px;margin-top:12px;max-width:100%}
 .projects .moody-cover .project-caption{inset:16px 16px auto;justify-content:flex-start;z-index:3}
 .projects .moody-cover .cover-play{opacity:.75}

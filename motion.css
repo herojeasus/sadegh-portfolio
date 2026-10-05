@@ -130,7 +130,7 @@ nav a[aria-current] { color:var(--motion-gold); }
 .cinema-status[hidden] { display:none; }
 .fa .cinema-stage { margin:20px 20px 20px 0; }
 .fa,.fa button,.fa input,.fa textarea,.fa select,.fa small,.fa .section-kicker,.fa .hero-tagline,.fa .sample-tag,.fa .outline-button,.fa .black-button,.fa .text-link,.fa .slot-label,.fa .hover-disc,.fa .project-caption small,.fa .dialog-copy small { font-family:Vazirmatn,Arial,sans-serif;letter-spacing:normal; }
-.fa h1,.fa h2,.fa h3,.fa .first-name,.fa .last-name { font-family:Abar,Vazirmatn,sans-serif; }
+.fa h1,.fa h2,.fa h3,.fa .first-name,.fa .last-name { font-family:Vazirmatn,Vazirmatn,sans-serif; }
 .fa .brand,.fa .footer-name { font-family:'DM Sans',Arial,sans-serif; }
 .fa p,.fa .dialog-copy p { line-height:1.95;font-weight:400; }
 .fa .credits-list p { line-height:1.8; }
@@ -142,3 +142,9 @@ nav a[aria-current] { color:var(--motion-gold); }
 }
 
 .cinema-stage.is-landscape,.fa .cinema-stage.is-landscape { height:auto;aspect-ratio:16/9; }
+
+/* Refined identity and unboxed cover lettering. */
+.fa h1,.fa h2,.fa h3,.fa .first-name,.fa .last-name,.fa .projects .moody-cover .cover-editorial-copy h3 { font-family:Vazirmatn,Arial,sans-serif; }
+.cover-signature { background:transparent;border:0;border-radius:0;padding:0;box-shadow:none; }
+.hero-tagline { font-size:clamp(13px,1.3vw,19px);line-height:1.65; }
+.hero-caption { justify-content:flex-end; }
