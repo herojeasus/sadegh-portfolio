@@ -296,6 +296,7 @@
 @font-face{font-family:Abar;src:url('fonts/abar-semibold.otf') format('opentype');font-weight:600;font-display:swap}
 @font-face{font-family:Abar;src:url('fonts/abar-black.otf') format('opentype');font-weight:900;font-display:swap}
 .fa,.fa button,.fa .section-kicker,.fa .hero-tagline,.fa .sample-tag,.fa .outline-button,.fa .black-button,.fa .text-link,.fa .slot-label,.fa .hover-disc,.fa .project-caption small{font-family:Abar,Vazirmatn,Arial,sans-serif}
+.theme-toggle{width:34px;height:34px;border-radius:10px;border:1px solid currentColor;background:transparent;color:inherit;display:grid;place-items:center;font:23px/1 Arial;flex-shrink:0}
 .projects .moody-cover{container-type:inline-size;background:#0b171d;isolation:isolate}
 .projects .moody-cover .cover-art{position:absolute;inset:0}
 .projects .moody-cover .cover-art img{object-fit:cover;object-position:center;width:100%;height:100%}
@@ -312,3 +313,42 @@
 .home-projects .feature .cover-editorial-copy h3{font-size:clamp(22px,4.4cqw,60px)}
 .home-projects .feature .moody-cover:after{background:linear-gradient(90deg,transparent 10%,rgba(4,12,17,.4) 55%,rgba(4,12,17,.78) 100%)}
 @media(max-width:600px){.cover-editorial-copy{inset:auto 12px 16px;padding-inline-end:24px}.cover-editorial-copy h3{font-size:clamp(15px,8cqw,24px)}.cover-editorial-copy .cover-eyebrow{font-size:8px;letter-spacing:.04em;margin-bottom:5px}.projects .moody-cover .project-caption{inset:auto 10px 14px}.projects .moody-cover .cover-play{width:24px;height:24px;border-radius:8px;font-size:9px}.home-projects .feature .cover-editorial-copy{max-width:62%;inset:auto 5% 7%;padding-inline-end:18px}.home-projects .feature .cover-editorial-copy h3{font-size:clamp(18px,5cqw,28px)}}
+/* Cover artwork typography: deliberate lines, oversized lettering and a brand stamp. */
+.projects .moody-cover .cover-editorial-copy{inset:auto 7% 8%;padding:0;z-index:2;width:86%;max-width:none}
+.projects .moody-cover .cover-editorial-copy h3{font-size:clamp(22px,13cqw,90px);font-weight:900;line-height:.93;letter-spacing:-.055em;text-transform:uppercase;text-shadow:0 3px 24px #0005}
+.cover-editorial-copy h3>span{display:block}
+.fa .projects .moody-cover .cover-editorial-copy h3{font-family:Abar,sans-serif;font-size:clamp(23px,15cqw,100px);font-weight:900;line-height:1.12;letter-spacing:0;text-transform:none}
+.cover-signature{display:inline-block;font-family:Georgia,serif;font-size:clamp(13px,6.5cqw,40px);font-weight:700;line-height:1.05;background:#17303cbb;color:#f5d890;padding:2px 12px 5px;border-radius:10px;margin-top:12px;max-width:100%}
+.projects .moody-cover .project-caption{inset:16px 16px auto;justify-content:flex-start;z-index:3}
+.projects .moody-cover .cover-play{opacity:.75}
+.projects .moody-cover:after{background:linear-gradient(180deg,transparent 20%,rgba(4,12,17,.13) 45%,rgba(4,12,17,.88) 100%)}
+.projects .cover-1 .cover-editorial-copy,.projects .cover-4 .cover-editorial-copy,.projects .cover-10 .cover-editorial-copy,.projects .cover-12 .cover-editorial-copy,.projects .cover-13 .cover-editorial-copy{width:49%;inset: auto 6% 12% auto;text-align:center}
+.projects .cover-1 .cover-editorial-copy h3,.projects .cover-4 .cover-editorial-copy h3,.projects .cover-10 .cover-editorial-copy h3,.projects .cover-12 .cover-editorial-copy h3,.projects .cover-13 .cover-editorial-copy h3{font-size:clamp(18px,8.5cqw,90px)}
+.fa .projects .cover-1 .cover-editorial-copy h3,.fa .projects .cover-4 .cover-editorial-copy h3,.fa .projects .cover-10 .cover-editorial-copy h3,.fa .projects .cover-12 .cover-editorial-copy h3,.fa .projects .cover-13 .cover-editorial-copy h3{font-size:clamp(22px,11cqw,110px)}
+.projects.home-projects .feature .cover-editorial-copy{width:52%;inset:auto 4% 10% auto;margin:0}
+.projects.home-projects .feature .cover-editorial-copy h3{font-size:clamp(26px,7.2cqw,110px)}
+.fa .projects.home-projects .feature .cover-editorial-copy h3{font-size:clamp(28px,9cqw,140px)}
+.projects.home-projects .cover-6 .cover-editorial-copy{width:48%;inset:auto 5% 12% auto}
+.projects.home-projects .cover-6 .cover-editorial-copy h3{font-family:'DM Sans',Arial,sans-serif;font-size:clamp(24px,10cqw,70px);line-height:.95;letter-spacing:-.055em}
+@media(max-width:600px){.cover-signature{font-size:clamp(10px,6cqw,20px);padding:2px 6px 3px;border-radius:6px;margin-top:7px}.projects .moody-cover .project-caption{inset:10px 10px auto}.projects .moody-cover .cover-editorial-copy h3{font-size:clamp(18px,13cqw,35px)}.fa .projects .moody-cover .cover-editorial-copy h3{font-size:clamp(20px,15cqw,38px)}.projects .cover-1 .cover-editorial-copy h3,.projects .cover-4 .cover-editorial-copy h3,.projects .cover-10 .cover-editorial-copy h3,.projects .cover-12 .cover-editorial-copy h3,.projects .cover-13 .cover-editorial-copy h3{font-size:clamp(12px,8cqw,30px)}.fa .projects .cover-1 .cover-editorial-copy h3,.fa .projects .cover-4 .cover-editorial-copy h3,.fa .projects .cover-10 .cover-editorial-copy h3,.fa .projects .cover-12 .cover-editorial-copy h3,.fa .projects .cover-13 .cover-editorial-copy h3{font-size:clamp(16px,10cqw,38px)}.projects.home-projects .feature .cover-editorial-copy h3{font-size:7.2cqw}.fa .projects.home-projects .feature .cover-editorial-copy h3{font-size:9cqw}}
+/* Theme applies to every route; photographs retain their cinematic color. */
+:root[data-theme=dark]{color-scheme:dark;background:#0b1014;color:#e9edef}
+[data-theme=dark] body,[data-theme=dark] .light{background:#0b1014;color:#e9edef}
+[data-theme=dark] .dark,[data-theme=dark] .about,[data-theme=dark] .skills-section{background:#10181e}
+[data-theme=dark] .inner-page .topbar{color:#e9edef}
+[data-theme=dark] .inner-page .language{border-color:#5a6870}
+[data-theme=dark] .inner-page .language button{color:#e9edef}
+[data-theme=dark] .inner-page .language button[aria-pressed=true]{color:#0b1014;background:#e9edef}
+[data-theme=dark] .page-intro,[data-theme=dark] .eyebrow,[data-theme=dark] .page-count,[data-theme=dark] .slot-label,[data-theme=dark] .experience p,[data-theme=dark] .job p,[data-theme=dark] .backstage-card h2{color:#a3b0b7}
+[data-theme=dark] .section-kicker{color:#9aaeb9}
+[data-theme=dark] .job,[data-theme=dark] .cv-details{border-color:#34414a}
+[data-theme=dark] .outline-button{border-color:#647680;color:#e9edef}
+[data-theme=dark] .outline-button:hover{background:#e9edef;color:#0b1014}
+[data-theme=dark] .brand-block{color:#afbec7}
+[data-theme=dark] .client-logo{filter:invert(1)}
+[data-theme=dark] .skill-card,[data-theme=dark] .music-moment{background:#0b1116}
+[data-theme=dark] .project-dialog{background:#111b22;color:#e9edef}
+[data-theme=dark] .project-dialog p,[data-theme=dark] .project-dialog small{color:#a5b7c2}
+[data-theme=dark] .contact-title,[data-theme=dark] .personal-copy h2{color:#e9edef}
+.theme-toggle:hover{background:#9bafbc20}
+@media(prefers-reduced-motion:no-preference){body,.light,.dark,.topbar,.theme-toggle{transition:background-color 250ms ease,color 250ms ease}}
