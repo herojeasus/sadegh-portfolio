@@ -290,3 +290,25 @@
 @media(hover:hover) and (pointer:fine){.projects .project-card:hover .designed-cover .cover-art{transform:scale(1.015)}}
 
 .projects .cover-13.designed-cover{aspect-ratio:1672/941}
+
+/* Native typography keeps Persian glyphs precise across all card sizes. */
+@font-face{font-family:Abar;src:url('fonts/abar-regular.otf') format('opentype');font-weight:400;font-display:swap}
+@font-face{font-family:Abar;src:url('fonts/abar-semibold.otf') format('opentype');font-weight:600;font-display:swap}
+@font-face{font-family:Abar;src:url('fonts/abar-black.otf') format('opentype');font-weight:900;font-display:swap}
+.fa,.fa button,.fa .section-kicker,.fa .hero-tagline,.fa .sample-tag,.fa .outline-button,.fa .black-button,.fa .text-link,.fa .slot-label,.fa .hover-disc,.fa .project-caption small{font-family:Abar,Vazirmatn,Arial,sans-serif}
+.projects .moody-cover{container-type:inline-size;background:#0b171d;isolation:isolate}
+.projects .moody-cover .cover-art{position:absolute;inset:0}
+.projects .moody-cover .cover-art img{object-fit:cover;object-position:center;width:100%;height:100%}
+.projects .moody-cover:after{display:block;content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(4,12,17,.25) 65%,rgba(4,12,17,.93) 100%);pointer-events:none;z-index:1}
+.cover-editorial-copy{position:absolute;inset:auto 24px 28px;z-index:2;text-align:start;pointer-events:none;padding-inline-end:44px}
+.cover-editorial-copy .cover-eyebrow{display:block;font:10px/1.5 'DM Sans',Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase;color:#dfc879;margin-bottom:8px}
+.cover-editorial-copy h3{font-size:clamp(18px,7cqw,38px);font-weight:600;letter-spacing:-.025em;line-height:1.15;color:#f2f4f3;margin:0;text-wrap:balance}
+.fa .cover-editorial-copy h3{font-family:Abar,Vazirmatn,Arial,sans-serif;letter-spacing:normal;line-height:1.5;font-weight:900}
+.projects .moody-cover .project-caption{z-index:3;display:flex;justify-content:flex-end;inset:auto 20px 25px}
+.projects .moody-cover .cover-play{background:#f3f5f01a;border:1px solid #d4e3e52b;color:#f4f6f3;backdrop-filter:blur(5px)}
+.projects.home-projects .moody-cover{aspect-ratio:16/9!important}
+.projects.home-projects .cover-6 .cover-art img{object-position:left center}
+.home-projects .feature .cover-editorial-copy{inset:auto 5% 8%;padding-inline-end:44px;max-width:65%;margin-inline-start:auto}
+.home-projects .feature .cover-editorial-copy h3{font-size:clamp(22px,4.4cqw,60px)}
+.home-projects .feature .moody-cover:after{background:linear-gradient(90deg,transparent 10%,rgba(4,12,17,.4) 55%,rgba(4,12,17,.78) 100%)}
+@media(max-width:600px){.cover-editorial-copy{inset:auto 12px 16px;padding-inline-end:24px}.cover-editorial-copy h3{font-size:clamp(15px,8cqw,24px)}.cover-editorial-copy .cover-eyebrow{font-size:8px;letter-spacing:.04em;margin-bottom:5px}.projects .moody-cover .project-caption{inset:auto 10px 14px}.projects .moody-cover .cover-play{width:24px;height:24px;border-radius:8px;font-size:9px}.home-projects .feature .cover-editorial-copy{max-width:62%;inset:auto 5% 7%;padding-inline-end:18px}.home-projects .feature .cover-editorial-copy h3{font-size:clamp(18px,5cqw,28px)}}
