@@ -347,8 +347,13 @@
 [data-theme=dark] .brand-block{color:#afbec7}
 [data-theme=dark] .client-logo{filter:invert(1)}
 [data-theme=dark] .skill-card,[data-theme=dark] .music-moment{background:#0b1116}
-[data-theme=dark] .project-dialog{background:#111b22;color:#e9edef}
-[data-theme=dark] .project-dialog p,[data-theme=dark] .project-dialog small{color:#a5b7c2}
+[data-theme=dark] #project-dialog{background:#111b22;color:#e9edef}
+[data-theme=dark] #project-dialog p,[data-theme=dark] #project-dialog small{color:#a5b7c2}
 [data-theme=dark] .contact-title,[data-theme=dark] .personal-copy h2{color:#e9edef}
 .theme-toggle:hover{background:#9bafbc20}
 @media(prefers-reduced-motion:no-preference){body,.light,.dark,.topbar,.theme-toggle{transition:background-color 250ms ease,color 250ms ease}}
+
+/* Keep long English words inside the artwork at every card size. */
+.projects .cover-1 .cover-editorial-copy h3{font-size:7.2cqw}
+.fa .projects .cover-1 .cover-editorial-copy h3{font-size:11cqw}
+@media(max-width:600px){.projects .cover-1 .cover-editorial-copy h3{font-size:7.2cqw}.fa .projects .cover-1 .cover-editorial-copy h3{font-size:10cqw}}
