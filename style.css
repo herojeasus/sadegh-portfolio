@@ -288,3 +288,5 @@
 .projects .designed-cover .project-caption{inset:auto 20px 16px;pointer-events:none}
 .projects .designed-cover .cover-play{margin-top:0;width:36px;height:36px;border-radius:12px;font-size:12px}
 @media(hover:hover) and (pointer:fine){.projects .project-card:hover .designed-cover .cover-art{transform:scale(1.015)}}
+
+.projects .cover-13.designed-cover{aspect-ratio:1672/941}
