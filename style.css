@@ -416,7 +416,7 @@
 @media(max-width:700px){.footer-grid{grid-template-columns:1fr;gap:30px}.contact-card{padding:19px 16px;gap:12px;border-radius:20px}.contact-card a{font-size:14px}.footer-note p{font-size:21px}.brand-track{animation-duration:42s}}
 @media(prefers-reduced-motion:reduce){.scroll-progress{display:none}.project-card .cover-art,.backstage-frame img{clip-path:none}.project-card .cover-editorial-copy h3>span,.project-card .cover-signature{opacity:1;transform:none;transition:none}.skill-icon,.music-moment>svg,.skills-section:before{animation:none}.contact-card:hover,.connect-icon:hover{transform:none}}
 /* Ocean midnight palette supplied by Sadegh. */
-:root{--midnight:#061c2c;--midnight-panel:#193347;--ocean-deep:#031830;--ocean-blue:#0a2943;--ocean-slate:#334b60;--ocean-muted:#a4b2ba;--ocean-white:#ede3e4}
+:root{--midnight:#05080d;--midnight-panel:#0c121c;--ocean-deep:#03060a;--ocean-blue:#080e16;--ocean-slate:#222d3b;--ocean-muted:#a4b2ba;--ocean-white:#ede3e4}
 [data-theme=dark],[data-theme=dark] body,[data-theme=dark] .light{background:var(--midnight);color:var(--ocean-white)}
 [data-theme=dark] .dark,[data-theme=dark] .about,[data-theme=dark] .skills-section{background:var(--ocean-blue)}
 [data-theme=dark] .skill-card,[data-theme=dark] .music-moment,[data-theme=dark] .contact-card{background:var(--midnight-panel)}
@@ -428,5 +428,5 @@
 [data-theme=dark] .section-kicker,[data-theme=dark] .page-intro,[data-theme=dark] .eyebrow,[data-theme=dark] .page-count,[data-theme=dark] .slot-label,[data-theme=dark] .job p,[data-theme=dark] .experience p,[data-theme=dark] .backstage-card h2,[data-theme=dark] .personal-copy p,[data-theme=dark] .skill-card p,[data-theme=dark] .music-moment p,[data-theme=dark] .about .bio,[data-theme=dark] #project-dialog p,[data-theme=dark] #project-dialog small{color:var(--ocean-muted)}
 [data-theme=dark] .skill-number,[data-theme=dark] .skill-card ul,[data-theme=dark] .contact-card small,[data-theme=dark] .footer-note small{color:#b7c7d6}
 [data-theme=dark] .job,[data-theme=dark] .cv-details,[data-theme=dark] .footer-bottom{border-color:var(--ocean-slate)}
-[data-theme=dark] .hero-shade{background:linear-gradient(180deg,#061c2c36,transparent 40%,#031830ba)}
-[data-theme=dark] .skills-section:before{background:radial-gradient(ellipse,#576e7d50,transparent 65%)}
+[data-theme=dark] .hero-shade{background:linear-gradient(180deg,#05080d36,transparent 40%,#03060aba)}
+[data-theme=dark] .skills-section:before{background:radial-gradient(ellipse,#334b6020,transparent 65%)}
