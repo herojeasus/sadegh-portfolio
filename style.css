@@ -357,3 +357,61 @@
 .projects .cover-1 .cover-editorial-copy h3{font-size:7.2cqw}
 .fa .projects .cover-1 .cover-editorial-copy h3{font-size:11cqw}
 @media(max-width:600px){.projects .cover-1 .cover-editorial-copy h3{font-size:7.2cqw}.fa .projects .cover-1 .cover-editorial-copy h3{font-size:10cqw}}
+/* Midnight palette and transparent, high contrast collaborator marks. */
+:root{--midnight:#07152b;--midnight-panel:#0c2039;--gold:#e8c77d}
+[data-theme=dark], [data-theme=dark] body,[data-theme=dark] .light{background:var(--midnight);color:#edf2f7}
+[data-theme=dark] .dark,[data-theme=dark] .about,[data-theme=dark] .skills-section{background:#0b1d35}
+[data-theme=dark] .skill-card,[data-theme=dark] .music-moment{background:#102640}
+[data-theme=dark] #project-dialog{background:#0c2039}
+[data-theme=dark] .brand-block .brand-item .client-logo{filter:none;mix-blend-mode:normal}
+[data-theme=dark] .brand-block .brand-item .client-logo img{filter:brightness(0) invert(1);opacity:.94;mix-blend-mode:normal}
+[data-theme=light] .brand-block .brand-item .client-logo{filter:brightness(0);mix-blend-mode:normal}
+[data-theme=light] .brand-block .brand-item .client-logo img{filter:brightness(0);opacity:.75;mix-blend-mode:normal}
+[data-theme=dark] .inner-page .topbar.open{background:#0b1d35}
+[data-theme=dark] .black-button{background:var(--gold);color:#07152b}
+[data-theme=dark] .footer-bottom{border-color:#29415e}
+[data-theme=dark] .hero-shade{background:linear-gradient(180deg,#07152b36,transparent 40%,#07152bba)}
+.travel-moment img{object-position:50% 38%}
+.footer-grid{grid-template-columns:1.4fr 1fr;gap:48px;align-items:center}
+.contact-cards{display:grid;gap:14px;min-width:0}
+.contact-card{display:flex;align-items:center;gap:18px;padding:22px 24px;border:1px solid #bec6cc;border-radius:24px;background:#eef1f5;min-width:0}
+.contact-card>svg{width:30px;height:30px;flex-shrink:0;color:#446983}
+.contact-card>div{min-width:0;flex:1}
+.contact-card small,.footer-note small{display:block;font:10px/1.4 monospace;letter-spacing:.1em;color:#647384;margin-bottom:10px}
+.contact-card a{display:block;font-size:clamp(12px,1.6vw,21px);overflow-wrap:anywhere;text-decoration:none}
+.contact-card .copy{font-size:21px;background:transparent;border:0;color:inherit;cursor:pointer}
+.footer-note p{font-size:clamp(19px,2.1vw,28px);line-height:1.6;max-width:430px;margin:0}
+[data-theme=dark] .contact-card{background:#102640;border-color:#294967}
+[data-theme=dark] .contact-card>svg{color:var(--gold)}
+[data-theme=dark] .contact-card small,[data-theme=dark] .footer-note small{color:#a8bbce}
+.scroll-progress{position:fixed;top:0;left:0;width:100%;height:3px;background:var(--gold);transform:scaleX(0);transform-origin:left;z-index:100;pointer-events:none}
+/* Marketing motion: image reveals, staggered type and decorative ambient light. */
+@media(prefers-reduced-motion:no-preference){
+ .reveal{transform:translateY(55px);transition:opacity 700ms var(--ease-out),transform 800ms var(--ease-out)}
+ .reveal.in{transform:none}
+ .project-card .cover-art,.backstage-frame img{clip-path:inset(18% 0 0 0 round 24px);transition:clip-path 900ms var(--ease-in-out),transform 220ms var(--ease-out)}
+ .project-card.in .cover-art,.backstage-card.in .backstage-frame img{clip-path:inset(0 0 0 0 round 24px)}
+ .project-card .cover-editorial-copy h3>span{opacity:0;transform:translateY(35%);transition:opacity 700ms var(--ease-out),transform 800ms var(--ease-out)}
+ .project-card.in .cover-editorial-copy h3>span{opacity:1;transform:none;transition-delay:140ms}
+ .project-card.in .cover-editorial-copy h3>span:nth-child(2){transition-delay:210ms}
+ .project-card.in .cover-editorial-copy h3>span:nth-child(3){transition-delay:280ms}
+ .project-card .cover-signature{opacity:0;transform:translateY(14px);transition:opacity 600ms var(--ease-out),transform 600ms var(--ease-out)}
+ .project-card.in .cover-signature{opacity:1;transform:none;transition-delay:300ms}
+ .skill-card.in .skill-icon{animation:icon-breathe 6s var(--ease-in-out) infinite}
+ .skill-card:nth-child(even) .skill-icon{animation-delay:-3s}
+ .music-moment>svg{animation:icon-breathe 7s var(--ease-in-out) infinite}
+ .skills-section{position:relative;isolation:isolate;overflow:hidden}
+ .skills-section:before{content:'';position:absolute;width:65%;height:65%;top:-20%;right:-20%;border-radius:50%;background:radial-gradient(ellipse,#315c7f35,transparent 65%);z-index:-1;pointer-events:none;animation:ambient-drift 14s var(--ease-in-out) infinite alternate}
+ #project-dialog[open]{animation:dialog-arrive 250ms var(--ease-out)}
+ .brand-track{animation-duration:48s}
+}
+@keyframes icon-breathe{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-9px) rotate(4deg)}}
+@keyframes ambient-drift{from{transform:translate3d(-15%,15%,0) scale(.95)}to{transform:translate3d(30%,35%,0) scale(1.15)}}
+@media(hover:hover) and (pointer:fine){
+ .contact-card{transition:transform 220ms var(--ease-out),border-color 220ms ease}
+ .contact-card:hover{transform:translateY(-3px);border-color:#c3a45e}
+ .skill-card:hover .skill-icon{animation-play-state:paused}
+ .connect-icon:hover{transform:translateY(-4px)}
+}
+@media(max-width:700px){.footer-grid{grid-template-columns:1fr;gap:30px}.contact-card{padding:19px 16px;gap:12px;border-radius:20px}.contact-card a{font-size:14px}.footer-note p{font-size:21px}.brand-track{animation-duration:42s}}
+@media(prefers-reduced-motion:reduce){.scroll-progress{display:none}.project-card .cover-art,.backstage-frame img{clip-path:none}.project-card .cover-editorial-copy h3>span,.project-card .cover-signature{opacity:1;transform:none;transition:none}.skill-icon,.music-moment>svg,.skills-section:before{animation:none}.contact-card:hover,.connect-icon:hover{transform:none}}
