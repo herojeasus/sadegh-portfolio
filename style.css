@@ -451,3 +451,55 @@
 .projects .cover-9 .cover-editorial-copy h3{font-size:clamp(18px,5cqw,48px);line-height:1.08}
 .projects .cover-9 .cover-signature{font-size:clamp(12px,2.5cqw,22px)}
 .brand-item:has(img[src*="logo-mark03"]){display:none!important}
+/* Editorial cinema covers — original video frames, native bilingual type. */
+.projects .hootan-poster{container-type:inline-size;position:relative;isolation:isolate;background:#060d12;overflow:hidden;aspect-ratio:16/9!important;color:#f5eee0}
+.hootan-photo{position:absolute;inset:0 0 0 32%;overflow:hidden}
+.projects .hootan-photo img{position:static;width:100%;height:100%;object-fit:cover;object-position:50% 22%;transform:none!important;filter:none!important}
+.hootan-shade{position:absolute;inset:0;background:linear-gradient(90deg,#060d12 5%,#060d12 25%,rgba(6,13,18,.83) 35%,transparent 60%),linear-gradient(0deg,rgba(6,13,18,.85),transparent 28%)}
+.hootan-edition{position:absolute;inset:7% auto auto 6%;font:500 1.65cqw/1.2 'DM Sans',sans-serif;letter-spacing:.15em;display:flex;align-items:center;gap:1.5cqw;color:#d3c5ae;direction:ltr}
+.hootan-edition i{width:5cqw;height:1px;background:#d3b776}
+.hootan-title{position:absolute;inset:24% auto auto 6%;display:flex;flex-direction:column;align-items:flex-start;gap:.5cqw;text-align:left;direction:ltr}
+.hootan-title>span{font:700 9cqw/.94 'DM Sans',Arial,sans-serif;letter-spacing:-.055em}
+.hootan-title>.title-bridge{font-size:4cqw;letter-spacing:.08em;margin:1cqw 0}
+.hootan-title>em{font:italic 700 11cqw/.92 Georgia,serif;letter-spacing:-.065em;color:#e7c374}
+.hootan-name{position:absolute;inset:auto 5% 7% auto;text-align:right;font:500 2cqw/1.25 'DM Sans',sans-serif;letter-spacing:.13em;color:#f9f0de;direction:ltr}
+.hootan-play{position:absolute;inset:auto auto 6% 6%;width:4.5cqw;height:4.5cqw;border:1px solid #e7c37480;border-radius:50%;display:grid;place-items:center;font:2.5cqw/1 Arial;color:#e7c374}
+.hootan-baseline{position:absolute;bottom:8%;left:13%;width:31%;height:1px;background:#e7c37455}
+.fa .hootan-title{inset:31% auto auto 5%;width:43%;align-items:flex-start;direction:rtl;text-align:right;gap:2cqw}
+.fa .hootan-title>span,.fa .hootan-title>em{font-family:Vazirmatn,Arial,sans-serif;font-weight:900;font-style:normal;letter-spacing:-.04em;font-size:8.6cqw;line-height:1.35;white-space:nowrap}
+.fa .hootan-title>em{font-size:7cqw}
+.fa .hootan-name,.fa .hootan-edition{font-family:Vazirmatn,Arial,sans-serif;letter-spacing:0}
+.projects.all-projects .hootan-poster{aspect-ratio:4/5!important}
+.all-projects .hootan-photo{inset:0}
+.all-projects .hootan-photo img{object-position:center 28%}
+.all-projects .hootan-shade{background:linear-gradient(0deg,#060d12,rgba(6,13,18,.72) 25%,transparent 57%),linear-gradient(180deg,rgba(6,13,18,.7),transparent 18%)}
+.all-projects .hootan-title{top:auto;bottom:14%;gap:.8cqw}
+.all-projects .hootan-title>span{font-size:12cqw}.all-projects .hootan-title>.title-bridge{font-size:5cqw}.all-projects .hootan-title>em{font-size:16cqw}
+.all-projects .hootan-edition{font-size:2.5cqw}.all-projects .hootan-name{font-size:2.8cqw}
+.fa .all-projects .hootan-title{top:auto;bottom:15%;width:70%}.fa .all-projects .hootan-title>span{font-size:13cqw}.fa .all-projects .hootan-title>em{font-size:11cqw}
+.backstage-page .backstage-grid{gap:36px 28px}
+.backstage-page .bts-poster{display:block;container-type:inline-size;isolation:isolate;aspect-ratio:4/5!important;background:#081017;border:1px solid #d3dce51a;border-radius:20px;overflow:hidden;color:#f6eee0}
+.bts-photo{position:absolute;inset:0 0 24%;overflow:hidden;background:#081017}
+.bts-photo img{width:100%;height:100%;object-fit:cover;object-position:center;transform:none!important;clip-path:none!important;filter:none!important}
+.bts-photo:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,8,12,.65),transparent 25%,transparent 75%,#081017)}
+.bts-poster-1 .bts-photo img{object-position:center 50%}.bts-poster-2 .bts-photo img{object-position:center 60%}.bts-poster-3 .bts-photo img{object-position:center 35%}.bts-poster-4 .bts-photo img{object-position:center 45%}
+.bts-topline{position:absolute;inset:5% 6% auto;display:flex;align-items:center;justify-content:space-between;font:500 2cqw/1.4 'DM Sans',sans-serif;letter-spacing:.15em;direction:ltr;color:#f6eee0}
+.bts-rec{display:flex;align-items:center;gap:1.4cqw}.bts-rec i{width:1cqw;height:1cqw;background:#e6c478;border-radius:50%}
+.bts-editorial{position:absolute;inset:auto 6% 6%;display:flex;flex-direction:column;gap:2.4cqw;text-align:start}
+.bts-editorial:before{content:'';width:12%;height:2px;background:#e6c478;margin-bottom:1cqw}
+.bts-subtitle{font:500 1.8cqw/1.3 'DM Sans',sans-serif;letter-spacing:.14em;color:#b6c4cd}
+.bts-editorial>strong{position:relative;z-index:1;max-width:88%;font:600 8cqw/.98 'DM Sans',Arial,sans-serif;letter-spacing:-.045em;text-wrap:balance}
+.bts-number{position:absolute;right:-1%;bottom:-2.5cqw;font:700 26cqw/1 'DM Sans',sans-serif;letter-spacing:-.08em;color:transparent;-webkit-text-stroke:1px #dce5e520;z-index:0;pointer-events:none}
+.backstage-page .bts-full-open{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:0;background:transparent;transform:none;backdrop-filter:none;display:block;cursor:pointer;z-index:5}
+.bts-play-circle{position:absolute;right:6%;top:62%;width:10cqw;height:10cqw;border:1px solid #f4e8ce80;border-radius:50%;display:grid;place-items:center;background:#08101745;backdrop-filter:blur(6px);color:#f4e8ce;transition:background .25s,transform .25s}
+.bts-play-circle svg{width:4cqw;height:4cqw}.bts-full-open:hover .bts-play-circle{background:#d9b567;color:#081017;transform:scale(1.08)}
+.backstage-page .backstage-card>h2{display:flex;justify-content:space-between;font-size:10px;letter-spacing:.1em;margin-top:16px;color:var(--muted)}
+.fa .bts-editorial>strong{font-family:Vazirmatn,Arial,sans-serif;font-weight:800;font-size:8cqw;line-height:1.4;letter-spacing:-.025em}
+.fa .bts-topline,.fa .bts-subtitle{font-family:Vazirmatn,Arial,sans-serif;letter-spacing:0;font-size:2.2cqw}
+@media(max-width:700px){.backstage-page .backstage-grid{grid-template-columns:1fr 1fr;gap:24px 12px}.backstage-page .backstage-card>h2{font-size:8px}.backstage-page .backstage-card>h2 span:last-child{display:none}.backstage-page .bts-poster{border-radius:14px}.bts-topline{font-size:2.8cqw}.bts-subtitle{font-size:2.4cqw}.hootan-edition{font-size:2cqw}.hootan-name{font-size:2.4cqw}}
+@media(prefers-reduced-motion:reduce){.bts-play-circle{transition:none}}
+.backstage-page .bts-full-open:hover,.backstage-page .bts-full-open:focus-visible{background:transparent;color:inherit;transform:none}
+.backstage-page .bts-full-open:focus-visible{outline:2px solid #e6c478;outline-offset:-4px}
+.bts-poster-3 .bts-photo img{object-position:center top}
+.backstage-page .bts-play-circle{min-width:25px;min-height:25px}
+.backstage-page .bts-play-circle svg{width:45%;height:45%;margin:0;display:block}
