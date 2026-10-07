@@ -141,7 +141,7 @@ function mountMotion() {
   document.querySelectorAll('.backstage-frame').forEach((frame,i)=>{
     const video=frame.querySelector('video');
     const src=video.getAttribute('src'),poster=video.getAttribute('poster');
-    frame.innerHTML=`<img src="${poster}" alt="${B('Behind the scenes','پشت‌صحنه')} ${i+1}" loading="lazy"><button class="frame-open" aria-label="${B('Watch backstage film','دیدن فیلم پشت‌صحنه')} ${i+1}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m9 5 10 7-10 7Z"/></svg><span>${B('WATCH','تماشا')}</span></button>`;
+    frame.innerHTML=`<img src="${poster}" alt="${B('Behind the scenes','پشت‌صحنه')} ${i+1}" loading="lazy"><span class="bts-cover-copy" style="pointer-events:none"><small>${B('BEHIND THE SCENES','پشت‌صحنه')}</small><strong>${B('ON SET','سر صحنه')} / 0${i+1}</strong></span><button class="frame-open" aria-label="${B('Watch backstage film','دیدن فیلم پشت‌صحنه')} ${i+1}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m9 5 10 7-10 7Z"/></svg><span>${B('WATCH','تماشا')}</span></button>`;
     on(frame.querySelector('button'),'click',()=>openCinemaMedia(frame,{src,poster,title:B('On set','سر صحنه')+' · 0'+(i+1),description:B('A few moments from behind the camera.','چند لحظه از اون طرف دوربین.')}));
   });
   document.querySelectorAll('.personal-cat,.travel-moment').forEach(frame=>{
