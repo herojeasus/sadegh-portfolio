@@ -444,3 +444,10 @@
 .bts-cover-copy{position:absolute;inset:auto 0 0;padding:65px 22px 30px;background:linear-gradient(transparent,rgba(3,10,16,.9));display:flex;flex-direction:column;gap:12px;text-align:start}
 .bts-cover-copy small{font-size:10px;letter-spacing:2px}.bts-cover-copy strong{font-size:clamp(25px,4vw,44px)}.bts-cover-copy b{position:absolute;inset-inline-end:22px;bottom:28px;font-size:22px}
 @media(max-width:600px){.home-projects .project-grid{gap:12px}.home-projects .cover-editorial-copy h3{font-size:9cqw!important}.fa .home-projects .cover-editorial-copy h3{font-size:11cqw!important}}
+
+/* Hootan: full frame, original face, clear bottom typography. */
+.projects .cover-9 .cover-art img{object-fit:cover!important;object-position:center 25%!important;transform:none!important;filter:none!important}
+.projects .cover-9 .cover-editorial-copy{inset:auto 6% 7%;max-width:82%;padding:0}
+.projects .cover-9 .cover-editorial-copy h3{font-size:clamp(18px,5cqw,48px);line-height:1.08}
+.projects .cover-9 .cover-signature{font-size:clamp(12px,2.5cqw,22px)}
+.brand-item:has(img[src*="logo-mark03"]){display:none!important}
