@@ -503,3 +503,18 @@
 .bts-poster-3 .bts-photo img{object-position:center top}
 .backstage-page .bts-play-circle{min-width:25px;min-height:25px}
 .backstage-page .bts-play-circle svg{width:45%;height:45%;margin:0;display:block}
+
+/* Match the white display type and gold signature of the film collection. */
+.hootan-edition,.hootan-baseline{display:none}
+.hootan-title{inset:auto auto 23% 6%;gap:1cqw}
+.hootan-title>span{font:700 9cqw/.98 'DM Sans',Arial,sans-serif;letter-spacing:-.055em;color:#f2f4f3}
+.hootan-title>em{font:700 5.8cqw/1.08 'DM Sans',Arial,sans-serif;letter-spacing:-.045em;color:#f2f4f3;white-space:nowrap}
+.hootan-name{inset:auto auto 10% 6%;font:700 3.7cqw/1.1 Georgia,serif;letter-spacing:-.02em;color:#f5d890;text-align:left}
+.hootan-play{inset:6% auto auto 6%;width:6cqw;height:6cqw;border-radius:28%;color:#f2f4f3;border-color:#d4e3e52b;background:#f3f5f01a}
+.fa .hootan-title{inset:auto auto 25% 5%;width:43%;gap:1cqw}
+.fa .hootan-title>span{font-size:8.6cqw;color:#f2f4f3}.fa .hootan-title>em{font-size:7cqw;color:#f2f4f3}
+.fa .hootan-name{inset:auto auto 12% 6%;font-family:Vazirmatn,Arial,sans-serif;font-weight:800;font-size:3.8cqw;letter-spacing:0}
+.all-projects .hootan-title{top:auto;bottom:18%}.all-projects .hootan-title>span{font-size:14cqw}.all-projects .hootan-title>em{font-size:10cqw}
+.all-projects .hootan-name{inset:auto auto 8% 6%;font-size:5.7cqw}
+.fa .all-projects .hootan-title{bottom:20%;width:78%}.fa .all-projects .hootan-title>span{font-size:13cqw}.fa .all-projects .hootan-title>em{font-size:11cqw}
+.fa .all-projects .hootan-name{font-size:5.7cqw;bottom:9%}
