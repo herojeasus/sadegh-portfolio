@@ -518,3 +518,20 @@
 .all-projects .hootan-name{inset:auto auto 8% 6%;font-size:5.7cqw}
 .fa .all-projects .hootan-title{bottom:20%;width:78%}.fa .all-projects .hootan-title>span{font-size:13cqw}.fa .all-projects .hootan-title>em{font-size:11cqw}
 .fa .all-projects .hootan-name{font-size:5.7cqw;bottom:9%}
+
+/* Hootan uses the shared cover component, play control and reveal/hover motion. */
+.projects .cover-9 .cover-art{isolation:isolate}
+.projects .cover-9 .cover-art img{filter:saturate(.4) brightness(.88) contrast(1.07)!important;object-fit:cover!important;object-position:center 25%!important}
+.projects .cover-9 .cover-art:after{content:'';position:absolute;inset:0;background:#164c66;mix-blend-mode:color;opacity:1;pointer-events:none;mask-image:radial-gradient(ellipse 45% 60% at 50% 50%,transparent 45%,#000 80%);-webkit-mask-image:radial-gradient(ellipse 45% 60% at 50% 50%,transparent 45%,#000 80%)}
+.projects .cover-9 .cover-editorial-copy{width:86%;max-width:none;inset:auto 7% 8%;padding:0}
+.projects .cover-9 .cover-editorial-copy h3{font-size:clamp(22px,10cqw,70px);font-weight:900;line-height:.95;letter-spacing:-.055em}
+.projects .cover-9 .cover-signature{font-size:clamp(13px,6.5cqw,40px)}
+.projects.home-projects .cover-9 .cover-art{inset:0 0 0 32%}
+.projects.home-projects .cover-9:after{background:linear-gradient(90deg,#040c11 12%,#040c11 25%,rgba(4,12,17,.85) 36%,transparent 60%),linear-gradient(0deg,rgba(4,12,17,.75),transparent 30%)}
+.projects.home-projects .cover-9 .cover-editorial-copy{width:47%;inset:auto auto 12% 6%;text-align:left}
+.projects.home-projects .cover-9 .cover-editorial-copy h3{font-size:clamp(15px,6.5cqw,58px)}
+.projects.home-projects .cover-9 .cover-signature{font-size:clamp(11px,4.4cqw,40px)}
+.projects.all-projects .cover-9{aspect-ratio:4/5!important}
+.fa .projects .cover-9 .cover-editorial-copy h3{font-family:Vazirmatn,Arial,sans-serif;letter-spacing:0;line-height:1.2;font-size:clamp(23px,13cqw,90px)}
+.fa .projects.home-projects .cover-9 .cover-editorial-copy{text-align:right}
+.fa .projects.home-projects .cover-9 .cover-editorial-copy h3{font-size:clamp(18px,8cqw,60px)}
